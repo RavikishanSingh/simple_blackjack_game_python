@@ -1,16 +1,17 @@
-
 Blackjack Game
 This project is a simple implementation of a Blackjack game using Python. The game allows a user to play a simplified version of Blackjack against the computer.
-
 Getting Started
 Prerequisites
 Make sure you have Python installed on your system. This project does not require any external libraries.
-
 Running the Game
 Clone the repository to your local machine.
 Navigate to the project directory.
 Run the Python script to start the game.
-
+bash
+Copy code
+git clone <repository-url>
+cd <repository-directory>
+python blackjack.py
 
 How to Play
 When the game starts, both the user and the computer are dealt two cards each.
@@ -29,13 +30,10 @@ If the user or the computer exceeds 21 points, they lose.
 Code Explanation
 deal_card()
 This function randomly selects a card from a standard deck of cards (excluding suits) and returns its value.
-
 calculate_score(cards)
 This function calculates the total score of a given hand of cards. If the hand contains an Ace and the total score exceeds 21, the Ace is counted as 1 instead of 11. If the hand is a Blackjack (an Ace and a 10-value card), it returns 0.
-
 compare(user_score, computer_score)
 This function compares the user's score with the computer's score and returns the result of the game.
-
 Main Game Loop
 The game starts by dealing two cards to both the user and the computer.
 The user is then prompted to draw another card or pass.
@@ -50,10 +48,12 @@ Type 'y' to get another card, type 'n' to pass: n
 Your final hand: [10, 7], final score: 17
 Computer's final hand: [9, 8], final score: 17
 Draw
+
 Contributing
 Feel free to submit issues or pull requests if you find any bugs or have suggestions for improvements.
-
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Enjoy the game!
+
+
